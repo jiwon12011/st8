@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>인라인레벨과 블록레벨</title>
+  <style>
+    *{margin:0; padding: 0;}
+    .container{
+      width: 80%;
+      margin:0 auto;
+      background-color: #ccc;
+    }
+    .inner{
+      width: 80%;
+      margin:0 auto;
+      padding: 50px 0;
+    }
+    .box{
+      margin: 50px auto;
+     background-color: #fbf;
+    } 
+    .box:last-child{margin-bottom: 0;}
+    .box span{color: #f00; font-size: large; font-weight: bold; background-color: #ef8;}
+  </style> 
+</head>
+<body>
+  <div class="container">
+    <div class="inner">
+    <div class="box box1">Lorem, <span>ipsum</span> dolor sit amet consectetur adipisicing <span>elit</span>. Explicabo non laboriosam doloribus eaque, sed cum molestias consectetur eligendi fugiat unde autem eveniet quasi ea architecto ex laudantium sequi? Suscipit, temporibus.</div>
+    <div class="box box2">Corporis deserunt impedit reiciendis laudantium. Harum, ipsa. Quasi doloribus voluptatum repudiandae dolor eaque, modi sit labore illo obcaecati architecto doloremque! Laboriosam, magni saepe repellat mollitia cum ipsa! Aliquid, at consequatur.</div>
+    <div class="box box3">Corporis deserunt impedit reiciendis laudantium. Harum, ipsa. Quasi doloribus voluptatum repudiandae dolor eaque, modi sit labore illo obcaecati architecto doloremque! Laboriosam, magni saepe repellat mollitia cum ipsa! Aliquid, at consequatur.</div>
+  <div></div>
+</body>
+</html>
