@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>말줄임표css</title>
+  <style>
+  *{margin:0; padding:0;}
+  .box{
+    margin:50px;
+    padding: 50px;
+    background-color: #ccc;
+  }
+  .box1{
+    /* white-space: normal; */
+    display:-webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    width: 80%;
+    height: 60px;
+  }
+  .box2{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .box3{overflow: visible;}
+  .box4{overflow: hidden;}
+  .box5{overflow: auto;}
+  </style>
+</head>
+<body>
+  <div class="box box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate itaque suscipit quia excepturi inventore aspernatur omnis facilis, ipsum dignissimos, officiis perferendis magnam enim quis, consectetur atque reprehenderit ratione libero aliquid.</div>
+  <div class="box box2">Officia cupiditate libero saepe ducimus culpa fugit, quisquam neque iusto, dolore impedit velit accusantium cum nisi laudantium assumenda ullam ipsam labore magni sit natus in cumque veritatis beatae. Maiores, laudantium.</div>
+  <hr>
+  <div class="box box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio temporibus magnam, porro libero, voluptates reprehenderit consequatur explicabo, dolorem cum a debitis neque? Error sapiente praesentium doloremque maxime illo pariatur ex.</div>
+  <div class="box box4">Animi doloribus nobis omnis, tempore cum inventore dicta, minus quis, sit explicabo in sequi illum! Commodi harum consectetur eveniet ex, molestiae voluptate dolorum pariatur ab, ipsum rerum veniam ducimus maiores?</div>
+  <div class="box box5">Animi doloribus nobis omnis, tempore cum inventore dicta, minus quis, sit explicabo in sequi illum! Commodi harum consectetur eveniet ex, molestiae voluptate dolorum pariatur ab, ipsum rerum veniam ducimus maiores?</div>
+</body>
+</html>
