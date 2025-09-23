@@ -19,6 +19,7 @@
     .ec-base-product ul.prdList{
       width: auto;
       background-color: #333;
+      margin: 0 -10px;
       font-size: 0;
       line-height: 0;
     }
@@ -33,6 +34,8 @@
       }
     .ec-base-product .prdList__item{
       padding: 0 10px;
+      position: relative;
+      overflow: hidden;
     }
 
     .ec-base-product .prdList__item .thumbnail{}
@@ -45,9 +48,26 @@
     }
 
     .ec-base-product .prdList__item .description{
+      position: absolute;
+      left: 10px; bottom: 0;
+      transform: translateY(100%);
+      opacity: 0.5;
+      transition: all 0.3;
+      width: calc(100%-20px);
+      box-sizing: border-box;
       background-color: rgba(255,255,255,0.5);
+      padding: 0.8em 1em;
     }
-    .ec-base-product .prdList__item .description .name{}
+    .ec-base-product .prdList__item:hover .description{
+      /* left: 10px; bottom: 0; */
+      transform: translateY(0);
+      opacity: 1;
+      transition: transform 1s;
+    }
+    .ec-base-product .prdList__item .description .name{
+      margin-bottom: 0.5em;
+      font-weight: bold;
+    }
     .ec-base-product .prdList__item .description .spec{}
     .ec-base-product .prdList__item .description .spec li{}
   </style>
