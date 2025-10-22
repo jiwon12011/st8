@@ -6,9 +6,10 @@ mystyle
 /***********
 변수 variables
 ******/
-:root{
---primary-color:#1f1f1f;
-}
+@import url(/myfolder/css/ub-variables.css);
+
+/* 그리드시스템 */
+@import url(/myfolder/css/ub-grid-system.css);
 
 
 /********
@@ -355,12 +356,13 @@ swiper controls가 슬라이드 아래 표시
   /* align-items: end;   */
 
   /* 슬라이드 .swiper-wrapper 기준 세로 가운데 */
-  align-items: center;  
+  align-items: center; 
+  gap: 20px;
 
 }
 .ub-swiper.ub-swiper-controls-bottom .swiper-slide{
   width:100% !important;
-  transform: scale(0.9);
+  transform: scale(1);
   /*슬라이드를 하단에 정렬할 때는 transform-origin*/
   /* transform-origin: center bottom;  */
 
