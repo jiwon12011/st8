@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no" />
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes">
+
+  <!-- PG크로스브라우징필수내용 -->
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <!-- // PG크로스브라우징필수내용 -->
+
+  <title></title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/project-poze/layout/basic/css/common.css">
+  <!-- 해당 CSS는 쇼핑몰 전체 페이지에 영향을 줍니다. 삭제와 수정에 주의해주세요. -->
+  <link rel="stylesheet" href="/project-poze/layout/basic/css/layout.css">
+  <link rel="stylesheet" href="/project-poze/layout/basic/css/ec-base-ui.css">
+  <link rel="stylesheet" href="/project-poze/layout/basic/css/ec-base-button.css">
+  <link rel="stylesheet" href="/project-poze/layout/basic/css/ec-base-tab.css">
+  <link rel="stylesheet" href="/project-poze/layout/basic/css/ec-base-table.css">
+  <link rel="stylesheet" href="/project-poze/layout/basic/css/ec-base-tooltip.css">
+  <link rel="stylesheet" href="/project-poze/layout/basic/css/ec-base-help.css">
+  <link rel="stylesheet" href="/project-poze/layout/basic/css/ec-base-fold.css">
+  <link rel="stylesheet" href="/project-poze/layout/basic/css/ec-base-box.css">
+  <link rel="stylesheet" href="/project-poze/layout/basic/css/ec-base-desc.css">
+  <link rel="stylesheet" href="/project-poze/layout/basic/css/ec-base-product.css">
+  <link rel="stylesheet" href="/project-poze/layout/basic/css/ec-base-prdInfo.css">
+  <link rel="stylesheet" href="/project-poze/layout/basic/css/ec-base-paginate.css">
+  <link rel="stylesheet" href="/newfolder/css/ub-variables.css">
+  <link rel="stylesheet" href="/newfolder/css/ub-grid-system.css">
+  <!--@css(/layout/basic/css/common.css)--><!-- 해당 CSS는 쇼핑몰 전체 페이지에 영향을 줍니다. 삭제와 수정에 주의해주세요. -->
+  <!--@css(/layout/basic/css/layout.css)-->
+  <!--@css(/layout/basic/css/ec-base-ui.css)-->
+  <!--@css(/layout/basic/css/ec-base-button.css)-->
+  <!--@css(/layout/basic/css/ec-base-tab.css)-->
+  <!--@css(/layout/basic/css/ec-base-table.css)-->
+  <!--@css(/layout/basic/css/ec-base-tooltip.css)-->
+  <!--@css(/layout/basic/css/ec-base-help.css)-->
+  <!--@css(/layout/basic/css/ec-base-fold.css)-->
+  <!--@css(/layout/basic/css/ec-base-box.css)-->
+  <!--@css(/layout/basic/css/ec-base-desc.css)-->
+  <!--@css(/layout/basic/css/ec-base-product.css)-->
+  <!--@css(/layout/basic/css/ec-base-prdInfo.css)-->
+  <!--@css(/layout/basic/css/ec-base-paginate.css)-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+  <!-- theme03 -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- theme03 -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Red+Hat+Display:wght@400;500;700&display=swap"
+    rel="stylesheet"><!-- theme04 -->
+
+  <!--@css(/layout/basic/css/swiper.min.css)-->
+  <!--@js(/layout/basic/js/swiper-bundle.min.js)-->
+  <!--@js(/js/module/product/sale_price.js)-->
+
+  <!--@js(/layout/basic/js/basic.js)-->
+  <!--@js(/layout/basic/js/layout.js)-->
+  <!--@js(/js/common.js)-->
+  <script>try { window.EZST = { q: [], register: function (a, b) { this.push([a, (b.init || b)(), arguments]) } } } catch (e) { }</script>
+  <!--ez-favicon[-->
+  <!--ez-favicon]-->
+  <!--@js(/ez/init.js)-->
+  <script type="text/ez-prop">
+	<ez-prop data-version="1.0.0">
+		<ez-var data-prop="theme" data-namespace="ez.layout.theme" data-type="array">
+			<ez-item data-id="theme01" data-name="MODERN" data-desc="(블랙+노토산스)" data-font="Noto Sans KR" data-background-color="#f5f5f5" override-value="html" data-font-css="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap">
+				모던하고 차분한 스타일
+				<!-- HTML도 <b>이렇게</b> 가능합니다.<br>
+				세부 옵션은 <a href="https://sample.cafe24.com/theme01" target="_blank">이곳을</a> 통해 확인 할 수 있습니다. -->
+			</ez-item>
+			<ez-item data-id="theme02" data-name="SOFT" data-desc="은은하고 부드러운 스타일	" data-font="Noto Sans KR" data-background-color="#d8d9ed" data-font-css="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"></ez-item>
+			<ez-item data-id="theme03" data-name="BREEZY" data-desc="밝고 경쾌한 스타일" data-font="Spoqa Han Sans Neo" data-background-color="#ffc1a8" data-font-css="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"></ez-item>
+			<ez-item data-id="theme04" data-name="FRESH" data-desc="시원하고 산뜻한 스타일" data-font="Nanum Gothic" data-background-color="#c3e7e7" data-font-css="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Red+Hat+Display:wght@400;500;700&display=swap"></ez-item>
+		</ez-var>
+	</ez-prop>
+</script>
+</head>
+
+<body class="theme01" data-ez-theme="theme01">
+  <div id="skipNavigation">
+    <p><a href="#category">전체상품목록 바로가기</a></p>
+    <p><a href="#contents">본문 바로가기</a></p>
+  </div>
+  <div id="wrap">
+    <!--@import(/layout/basic/header.html)-->
+    <!--@import(/layout/basic/sidebar.html)-->
+    <div id="container" data-ez="layout-0dqi02p-1">
+      <div id="contents">
+        <span module="Layout_MobileAction" class="RTMB">
+          <a href="#none" onclick="{$go_back}"><!--@import(/svg/icon-go-back.html)-->뒤로가기</a>
+        </span>
+        <!--@contents-->
+      </div>
+    </div>
+    <!--@import(/layout/basic/footer.html)-->
+    <!-- 푸터 -->
+
+    <div class="bottom-nav RMB RTB" ez-module="bottom-navigation" data-ez="contents-0uc9gnc-1">
+      <ul class="bottom-nav__tabBar">
+        <li><button type="button" class="btnNav eNavFold"><i aria-hidden="true" class="icon icoNav"></i>네비게이션</button>
+        </li>
+        <li><button type="button" class="btnSearch eSearch"><!--@import(/svg/icon-search.html)-->검색</button></li>
+        <li><a href="/"><!--@import(/svg/icon-home.html)-->홈</a></li>
+        <li module="Layout_stateLogon"><a href="/order/basket.html"><!--@import(/svg/icon-cart.html)-->Cart <span
+              class="count {$basket_count_display|display} {$basket_count_display_class}"><span
+                class="{$basket_count_class}">{$basket_count}</span></span></a></li>
+        <li module="Layout_stateLogoff"><a href="/order/basket.html"><!--@import(/svg/icon-cart.html)-->Cart <span
+              class="count {$basket_count_display|display} {$basket_count_display_class}"><span
+                class="{$basket_count_class}">{$basket_count}</span></span></a></li>
+        <li><a href="/myshop/index.html"><!--@import(/svg/icon-user.html)-->마이쇼핑</a></li>
+      </ul>
+      <div class="bottom-nav__top">
+        <a href="#wrap" title="화면 최상단으로 이동하기"><!--@import(/svg/icon-quick-arrow.html)--></a>
+      </div>
+    </div>
+    <div class="footer_margin" data-ez="module-0nehne2-1" data-ez-module="user-defined/1" data-ez-name="USER DEFINED"
+      data-ez-type="plain"></div>
+    <footer id="footer" class="layout1" data-ez-layout="layout1" data-ez="contents-1h3ulg9-1">
+      <ez-prop data-version="1.0.0" type="layout">
+        <ez-var data-prop="layout" data-namespace="ez.layout.footer.layout" data-type="array">
+          <ez-item data-id="layout1" data-name="기본형"></ez-item>
+          <ez-item data-id="layout2" data-name="좌우반전형"></ez-item>
+          <ez-item data-id="layout3" data-name="중앙형"></ez-item>
+        </ez-var>
+      </ez-prop>
+      <div class="inner" module="Layout_footer">
+        <div class="bt_logo" module="Layout_LogoBottom"><a href="/"><img
+              src="//ecimg.cafe24img.com/pg2183b48931384026/jiwon12011/web/upload/category/logo/v2_1303062d27f74f2dd534e9a7dbbe3908_FrPxER0OY8_top.jpg"
+              alt="{$mall_name}"></a>
+        </div><!-- //bt_logo -->
+        <div class="bt_wrap">
+          <div class="left">
+            <div class="bt_util" data-ez-group="shortcut">
+              <div data-ez-role="title" style="display:none;">바로가기</div>
+                <ul data-ez-role="list">
+                  <li data-ez-item="company"><a href="/shopinfo/company.html">회사소개</a></li>
+                  <li data-ez-item="agreement"><a href="/member/mall_agreement.html">이용약관</a></li>
+                  <li data-ez-item="privacy"><a href="/member/privacy.html"><strong>개인정보처리방침</strong></a></li>
+                  <li data-ez-item="guide"><a href="/shopinfo/guide.html">이용안내</a></li>
+                </ul>
+              </div><!-- //bt_util -->
+              <div class="bt_info" data-ez-group="info">
+              <div class="title" data-ez-role="title">쇼핑몰 기본정보</div>
+                <div class="bt_info_list" data-ez-role="list">
+                  <div data-ez-item="company_name"><span data-ez-role="field">상호명</span> <span
+                    data-ez-role="value">{$company_name}</span></div>
+                  <div data-ez-item="president_name"><span data-ez-role="field">대표자명</span> <span
+                  data-ez-role="value">{$president_name}</span></div>
+                  <div data-ez-item="phone"><span data-ez-role="field">대표 전화</span> <span
+                    data-ez-role="value">{$phone}</span></div>
+                    <div data-ez-item="company_regno"><span data-ez-role="field">사업자 등록번호</span> <span
+                      data-ez-role="value">{$company_regno}</span></div>
+                      <div data-ez-item="network_regno"><span data-ez-role="field">통신판매업 신고번호</span> <span
+                        data-ez-role="value">{$network_regno} {$biz_no_link}</span></div>
+                        <div data-ez-item="address"><span data-ez-role="field">사업장 주소</span> <span
+                        data-ez-role="value">{$mall_zipcode} {$mall_addr1} {$mall_addr2}</span></div>
+                  <div data-ez-item="cpo_name"><span data-ez-role="field">개인정보보호책임자</span> <span
+                  data-ez-role="value">{$cpo_name}</span></div>
+                </div><!-- //bt_info_list -->
+              </div><!-- //bt_info -->
+          </div>
+          <div class="right">
+            <div class="bt_sns" data-ez-group="sns" data-ez-role="list">
+            <div class="title" data-ez-role="title">SNS</div>
+              <a data-ez-item="instagram" href="https://instagram.com/"
+              target="_blank">
+              <img src="/newfolder/images/instagram.png" alt=""><!--@import(/svg/icon-instagram.html)--></a>
+              <a data-ez-item="youtube" href="https://youtube.com/"
+              target="_blank">
+              <img src="/newfolder/images/youtube.png" alt=""><!--@import(/svg/icon-youtube.html)--></a>
+              <a data-ez-item="facebook" href="https://facebook.com/"
+              target="_blank">
+              <img src="/newfolder/images/facebook.png" alt=""><!--@import(/svg/icon-facebook.html)--></a>
+              <a data-ez-item="twitter" href="https://twitter.com/"
+              target="_blank">
+              <img src="/newfolder/images/twitter.png" alt=""><!--@import(/svg/icon-twitter.html)--></a>
+            </div>
+            <div module="Layout_Info" class="bt_cscenter" data-ez-group="cs">
+              <div class="title" data-ez-role="title">CUSTOMER CENTER</div>
+              <div data-ez-role="list">
+                <div data-ez-item="phone" class="bt_txt01"><strong></strong><span class="pdr10"></span><span
+                  data-ez-role="value">{$phone}</span></div>
+                <div data-ez-item="email" class="bt_txt02"><strong>상담/주문 이메일</strong><span
+                  data-ez-role="value">{$inquiry_email}</span></div>
+                <div data-ez-item="runtime" class="bt_txt02"><strong>CS운영시간</strong><span
+                  data-ez-role="value">{$runtime}</span></div>
+              </div>
+            </div><!-- //bt_cscenter -->
+          </div>
+        </div>
+
+        <div class="bt_escrow" data-ez-escrow style="display:none;"><!-- 구매안전서비스 배너 -->
+          <a href="#" data-ez-link="#link">
+            <img src="/SkinImg/img/bt_ew_allat.png" class="bt_ew_allat" alt="올앳" data-ez-escrow-id="allat">
+            <img src="/SkinImg/img/bt_ew_iniapy.png" class="bt_ew_iniapy" alt="이니시스" data-ez-escrow-id="inicis">
+            <img src="/SkinImg/img/bt_ew_kcp.png" class="bt_ew_kcp" alt="NHN한국사이버결제" data-ez-escrow-id="kcp">
+            <img src="/SkinImg/img/bt_ew_kicc.png" class="bt_ew_kicc" alt="한국정보통신" data-ez-escrow-id="kicc">
+            <img src="/SkinImg/img/bt_ew_ksnet.png" class="bt_ew_ksnet" alt="케이에스넷" data-ez-escrow-id="ksnet">
+            <img src="/SkinImg/img/bt_ew_nice.png" class="bt_ew_nice" alt="나이스페이먼츠" data-ez-escrow-id="nicepay">
+            <img src="/SkinImg/img/bt_ew_payments.png" class="bt_ew_payments" alt="토스페이먼츠" data-ez-escrow-id="dacom">
+            <img src="/SkinImg/img/bt_ew_settle.png" class="bt_ew_settle" alt="세틀뱅크" data-ez-escrow-id="settlebank">
+            <img src="/SkinImg/img/bt_ew_smartro.png" class="bt_ew_smartro" alt="스마트로" data-ez-escrow-id="smartro">
+            <span>고객님은 안전거래를 위해 결제시 저희 쇼핑몰에서 가입한 구매안전 서비스를 이용하실 수 있습니다. [서비스가입정보확인]</span>
+          </a>
+        </div><!-- //bt_escrow -->
+
+        <div class="bt_wrap2">
+          <div class="bt_copyright">
+            Copyright © {$mall_name}. All Rights Reserved. Hosting by Cafe24 Corp.
+          </div><!-- //bt_copyright -->
+
+        </div><!-- //bt_wrap2 -->
+      </div><!-- //inner -->
+    </footer>
+    <div module="Layout_SearchHeader" data-ez="contents-1wydbsc-1">
+      <!--
+		$product_page=/product/detail.html
+		$category_page=/product/list.html
+	-->
+
+    <!--#ez="1/4"-->
+
+    <!-- /푸터 -->
+    <!--#ez="1/1"-->
+  </div><!-- //wrap -->
+
+
+  <div class="layer_shadow" id="layer_shadow"></div>
+  <div id="layoutDimmed" class="dimmed"></div>
+  <link rel="stylesheet" href="/project-poze/layout/basic/css/sub_style.css">
+  <link rel="stylesheet" href="/project-poze/layout/basic/css/sub_theme.css">
+  <link rel="stylesheet" href="/project-poze/layout/basic/css/add_theme01.css">
+  <link rel="stylesheet" href="/project-poze/layout/basic/css/add_theme02.css">
+  <link rel="stylesheet" href="/project-poze/layout/basic/css/add_theme03.css">
+  <link rel="stylesheet" href="/project-poze/layout/basic/css/add_layout.css">
+
+  <link rel="stylesheet" href="/newfolder/mystyle.css">
+
+  <!--@css(/layout/basic/css/sub_style.css)-->
+  <!--@css(/layout/basic/css/sub_theme.css)-->
+  <!--@css(/layout/basic/css/add_theme01.css)-->
+  <!--@css(/layout/basic/css/add_theme02.css)-->
+  <!--@css(/layout/basic/css/add_theme03.css)-->
+  <!--@css(/layout/basic/css/add_layout.css)-->
+</body>
+
+</html>
