@@ -1,0 +1,65 @@
+<aside id="aside" module="layout_slidePackage" data-ez="contents-1wjq8qv-1">
+    <!--@css(/layout/basic/css/slideMenu.css)-->
+    <!--@js(/layout/basic/js/slide_menu.js)-->
+    <div class="navigation_member">
+        <div class="side_logo" module="Layout_LogoTop"><a href="/"><img src="{$logo}" alt="{$mall_name}"></a></div>
+
+        <div class="navigation_state" data-ez-group="top-util-menu" data-ez-role="list">
+            <a data-ez-item="join" module="Layout_statelogoff" href="/member/agreement.html">회원가입</a>
+            <a data-ez-item="login" module="Layout_statelogoff" href="/member/login.html">로그인</a>
+            <a data-ez-item="modify" module="Layout_stateLogon" href="/member/modify.html">내정보수정</a>
+            <a data-ez-item="logout" module="Layout_stateLogon" href="{$action_logout}">로그아웃</a>
+            <a data-ez-item="order" href="/myshop/order/list.html">주문조회</a>
+            <a data-ez-item="mypage" module="Layout_stateLogon" href="/myshop/index.html">마이페이지</a>
+            <a data-ez-item="recent" href="/product/recent_view_product.html">최근본상품</a>
+        </div><!-- //navigation_state -->
+    </div><!-- //navigation_member -->
+
+    <nav class="navigation-menu" role="navigation">
+        <div data-ez-module="menu-side/1">
+            <div id="slideCateList" class="navigation-menu__category">
+                <div class="slidebar_shop">SHOP</div>
+                <ul id="slide_add_category">
+                    <li><a href="/category/New/63/" class="view">New</a></li>
+                    <li><a href="/category/Best/64/" class="view">Best</a></li>
+                    <li><a href="/category/Lip/42/" class="view">Lip</a></li>
+                    <li><a href="/category/Face/44/" class="view">Face</a></li>
+                    <li><a href="/category/Cheeks/65/" class="view">Cheeks</a></li>
+                    <li><a href="/category/Eyes/43/" class="view">Eyes</a></li>
+                    <li><a href="/category/Tool/46/" class="view">Tool</a></li>
+                </ul>
+            </div>
+        </div><!-- //menu-side/1 -->
+
+
+        <div module="Layout_BoardInfo" class="navigation-menu__board">
+            <div class="title">only POZE<button type="button" class="icoCategory">펼침</button></div>
+            <ul class="categoryList">
+                <li><a href="{$link_board_list}">{$board_name}</a> {$board_adult_icon}</li>
+                <li><a href="{$link_board_list}">{$board_name}</a> {$board_adult_icon}</li>
+            </ul>
+        </div><!-- //navigation-menu__board -->
+
+        <div class="sidebar_navigation">
+            <div class="slidebar_community">COMMUNITY</div>
+            <div class="slidebar_community_1">About</div>
+            <div class="slidebar_community_1">Notice</div>
+            <div class="slidebar_community_1">Event</div>
+            <div class="slidebar_community_1">Review</div>
+        </div>
+        <div module="Layout_multishopList">
+            <button type="button" class="toggle">{$current_language} <i aria-hidden="true"
+                    class="icon icoArrowBottom"></i></button>
+            <ul module="Layout_multishopListitem">
+                <li class="{$selected_class}">
+                    <a href="//{$shop_domain}/">{$locale_language}</a>
+                </li>
+                <li class="{$selected_class}">
+                    <a href="//{$shop_domain}/">{$locale_language}</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <button type="button" class="btnClose"><i aria-hidden="true" class="icon icoClose"></i>닫기</button>
+</aside>
+<!--#ez="1/12"-->

@@ -1,0 +1,63 @@
+.sticky_container{
+	display: flex;
+	width: 100%;
+}
+.sticky_container>div{
+	/* flex:1 !important; */
+	width: 100%;
+}
+.sticky_container .sticky_left{
+	width: 100%;
+}
+.sticky_container .sticky_left>div{
+	width: 100%;
+	position: sticky;
+	top: 0px;
+}
+.sticky_container .sticky_left>div>div{
+	width: 100%;
+}
+.sticky_container .sticky_left>div>div>div{
+	width: 100%;
+}
+.sticky_container .sticky_left>div>div>div>img{
+	width: 100%;
+}
+
+.sticky_container .sticky_right{
+	padding: 0 2rem;
+}
+.sticky_container .sticky_right>div{
+	display: flex;
+	width: 100%;
+	padding-bottom: 2rem;
+}
+.sticky_container .sticky_right>div>div{
+	width: 100%;
+	padding: 0 1rem;
+	text-align: center;
+}
+.sticky_container .sticky_right>div>div>img{
+	width: 100%;
+}
+.sticky_container .sticky_right>div>div>div{
+	margin-top:0.5rem;
+
+}
+.sticky_container .sticky_right>div>div>div>.sticky_name{
+	font-weight: bold;
+	color: #3c322d;
+}
+.sticky_container .sticky_right>div>div>div>.go_shop{
+	font-size: 12px;
+	color:#693e43
+}
+.sticky_container .sticky_right>div>div>div>.go_shop:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.sticky_container .sticky_right>div>div>img:hover{
+	cursor: pointer;
+	transform: scale(1.05);
+	transition: all 0.3s ease-in-out;
+}

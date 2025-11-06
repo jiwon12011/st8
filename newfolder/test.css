@@ -1,0 +1,43 @@
+body.expand #aside {
+    left: 0;
+    width: 100%;
+    width: 20%;     /*이거*/
+}
+body.expand #layoutDimmed {
+    display: block; 
+    display: none;  /*이거*/
+}
+
+/*추가영역*/
+body.expand #container {
+    width: 100%;
+    zoom: 1;
+    position: relative;
+    margin: 0 auto;
+    padding-left: 20%; /*이거*/
+}
+body.expand #header {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background: transparent;
+    /* position: relative; //이거 지움 */
+    z-index: 10;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-bottom: none !important;
+}
+body.expand img.top-left{
+    border-top-left-radius: 16rem;
+}
+body.expand #footer .inner {
+    max-width: 1760px;
+    width: 92%;
+    margin: 0 auto;
+    padding: 20px 0 70px;
+    color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20%; /*이거*/
+}
