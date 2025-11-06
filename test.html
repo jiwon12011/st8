@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+        .body{
+            display: flex;
+        }
+        .main{
+            background-color: black;
+            width: 100%;
+            height: 500px;
+        }
+        .header{
+            position: absolute;
+            color: white;
+        }
+        .body .aside{
+            display: none;
+        }
+        .wj div{
+            background-color: red;
+            height: 10px;
+            margin-bottom: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">헤더</div>
+    <div class="body">
+      <div>
+        <div class="aside">메뉴</div>
+        <div class="main"></div>
+      </div>
+    </div>
+    <div class="aside"></div>
+    <div class="wj">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+</body>
+<script>
+    $(".main").on("click",function(){
+        if($(".aside").css("display") == "none"){
+            $(".header").css("color","black").css("position","relative")
+            $(".aside").css("display","block")
+            $(this).css("border-radius","3rem")
+        }else{
+            $(this).css("border-radius","0")
+            $(".aside").css("display","none")
+            $(".header").css("color","white").css("position","absolute")
+        }
+    })
+</script>
+</html>
